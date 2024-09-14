@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meals Find project</title>
+    <link rel="stylesheet" href="meals.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="meals.html"><i class="fa-solid fa-house"></i></a>
+        <div class="logo">MEAL FINDER</div>
+        <div id="hamburger2">
+          <i id="hamburger" class="fa-solid fa-bars"></i>
+          <div id="dropdown">
+            <ul id="categoriesList">
+              <a href="#"
+                ><i
+                  style="margin-left: 90px"
+                  id="cancle"
+                  class="fa-solid fa-xmark"
+                ></i
+              ></a>
+              <!-- <li><a href="Beef">Beef</a></li>
+              <li><a href="Chicken">Chicken</a></li>
+              <li><a href="Dessert">Dessert</a></li>
+              <li><a href="Lamb">Lamb</a></li>
+              <li><a href="Miscellaneous">Miscellaneous</a></li>
+              <li><a href="Pasta">Pasta</a></li>
+              <li><a href="Pork">Pork</a></li>
+              <li><a href="Seafood">Seafood</a></li>
+              <li><a href="Side">Side</a></li>
+              <li><a href="Starter">Starter</a></li>
+              <li><a href="Vegan">Vegan</a></li>
+              <li><a href="Vegetarian">Vegetarian</a></li>
+              <li><a href="Breakfast">Breakfast</a></li>
+              <li><a href="Goat">Goat</a></li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="search-section">
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search recipes here ..."
+        />
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <h2>What are your favorite cuisines?</h2>
+      <p>PERSONALIZE YOUR EXPERIENCE</p>
+    </section>
+    <br />
+    <div id="cate">
+      <h1 id="cat" style="border-bottom: 5px solid orange; width: 100px;">categories</h1>
+      <h1 id="mel" style="border-bottom: 5px solid orange; width: 80px;">Meals:</h1>
+    </div>
+    <br />
+    
+    <div id="output"></div>
+   
+    <div id="meals"></div>
+<div id="gallery"></div>
+<div id="cate"></div>
+<!-- image click -->
+<div id="categoryDescription"></div>
+<div class="image-grid" id="imageGrid">
+  <!-- Categories will be loaded here dynamically -->
+</div>
+
+<div class="moved-items" id="movedItems">
+
+</div>
+    <script src="meals.js"></script>
+  </body>
+</html>
